@@ -1900,7 +1900,7 @@ class Parsedown
 
     protected static function escape($text, $allowQuotes = false)
     {
-        return htmlspecialchars($text, $allowQuotes ? ENT_NOQUOTES : ENT_QUOTES, 'UTF-8');
+        return htmlentities($text, $allowQuotes ? ENT_NOQUOTES : ENT_QUOTES, 'UTF-8');
     }
 
     protected static function striAtStart($string, $needle)
